@@ -4,6 +4,7 @@ Dicas e links sobre git no Windows
 
 <!-- MarkdownTOC -->
 
+- [Introdução](#introdução)
 - [Instalação](#instalação)
 - [Configuração básica](#configuração-básica)
 - [Primeiros passos](#primeiros-passos)
@@ -29,6 +30,17 @@ Dicas e links sobre git no Windows
     - [Addons e Plugins](#addons-e-plugins)
 
 <!-- /MarkdownTOC -->
+
+## Introdução
+
+Aqui estão algumas dicas simples para se usar git no dia a dia.
+Quem tiver qualquer dúvida pode abrir uma [Issue](https://github.com/saitodisse/git-feliz/issues/new) e fazer qualquer pergunta. Vamos expandindo as dicas até que seja o mínimo suficiente para se trabalhar bem com git.
+
+Quem quiser contribui com esse tutorial faça o Fork ou me peça que eu dou acesso de escrita.
+
+Ao final existem muitos links. A lista deve crescer bastante.
+
+-----------
 
 ## Instalação
 
