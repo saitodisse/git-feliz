@@ -4,14 +4,13 @@ Dicas e links sobre git no Windows
 
 <!-- MarkdownTOC -->
 
-- Instalação
-- Configuração básica
-- Primeiros passos
-    - Novo repositório
-    - Clonar repositório existente
+- [Instalação][instalação]
+- [Configuração básica][configuração-básica]
+- [Primeiros passos][primeiros-passos]
+    - [Novo repositório][novo-repositório]
+    - [Clonar repositório existente][clonar-repositório-existente]
 
 <!-- /MarkdownTOC -->
-
 
 ## Instalação
 
