@@ -45,13 +45,15 @@ git config --global user.name "SEU NOME"
 git config --global user.email "SEU EMAIL"
 ```
 
+[mais configurações básicas](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
 -----------
 
 ## Primeiros passos
 
 ### Novo repositório
 
-pelo _git bash_ na sua pasta raiz do projeto:
+Pelo _git bash_ na pasta raiz do projeto use o `git init`. Será criada a pasta .git que é o seu repositório local.
 
 ```sh
 git init
