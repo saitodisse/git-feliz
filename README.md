@@ -4,22 +4,20 @@ Dicas e links sobre git no Windows
 
 <!-- MarkdownTOC -->
 
-- [Instalação][instalação]
-- [Configuração básica][configuração-básica]
-- [Primeiros passos][primeiros-passos]
-    - [Novo repositório][novo-repositório]
-    - [Clonar repositório existente][clonar-repositório-existente]
+- [Instalação](#instalação)
+- [Configuração básica](#configuração-básica)
+- [Primeiros passos](#primeiros-passos)
+    - [Novo repositório](#novo-repositório)
+    - [Clonar repositório existente](#clonar-repositório-existente)
 
 <!-- /MarkdownTOC -->
 
-<a name="instalação"></a>
 ## Instalação
 
 [Instalação do Windows](https://git-scm.com/downloads)
 
 -----------
 
-<a name="configuração-básica"></a>
 ## Configuração básica
 
 pelo _git bash_:
@@ -31,10 +29,8 @@ git config --global user.email "SEU EMAIL"
 
 -----------
 
-<a name="primeiros-passos"></a>
 ## Primeiros passos
 
-<a name="novo-repositório"></a>
 ### Novo repositório
 
 pelo _git bash_ na sua pasta raiz do projeto:
@@ -43,7 +39,6 @@ pelo _git bash_ na sua pasta raiz do projeto:
 git init
 ```
 
-<a name="clonar-repositório-existente"></a>
 ### Clonar repositório existente
 
 Se deseja clonar este repositório, por exemplo, vá para sua pasta de projetos e rode um `git clone`:
