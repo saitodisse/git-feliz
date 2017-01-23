@@ -29,15 +29,14 @@ Ao final existem muitos links. A lista deve crescer bastante.
     - [TFVC vs Git](#tfvc-vs-git)
     - [Dicas](#dicas)
     - [Branching models](#branching-models)
-    - [Ferramentas úteis](#ferramentas-úteis)
     - [Podcasts](#podcasts)
-    - [Extra](#extra)
     - [História do Git](#história-do-git)
     - [Vídeos](#vídeos)
     - [Curiosidades](#curiosidades)
     - [Socorro, perdi meus arquivos?](#socorro-perdi-meus-arquivos)
     - [Cheat Sheets](#cheat-sheets)
     - [Addons e Plugins](#addons-e-plugins)
+    - [Extra](#extra)
 
 <!-- /MarkdownTOC -->
 
@@ -141,16 +140,14 @@ git checkout -b NOVA-BRANCH
 
 -----------
 
-
 ## Links
 
 ### TFVC vs Git
 
-- [Git documentation overview](https://visualstudio.com/pt-br/docs/git/overview)
-- [Git and TFVC version control](https://visualstudio.com/en-us/docs/tfvc/comparison-git-tfvc)
-- [version control](http://stackoverflow.com/questions/33004650/should-we-use-git-or-tfvc-on-a-tfs-2015)
-- [What are the big differences between TFS and Git for source control when using Visual Studio 2013?](http://stackoverflow.com/questions/20107701/what-are-the-big-differences-between-tfs-and-git-for-source-control-when-using-v)
-- [Fresh Air for Developers](http://hanselminutes.com/359/git-support-within-visual-studio)
+- [microsoft: Git documentation overview](https://visualstudio.com/pt-br/docs/git/overview)
+- [microsoft: Git and TFVC version control](https://visualstudio.com/en-us/docs/tfvc/comparison-git-tfvc)
+- [stackoverflow - git vs TFVC](http://stackoverflow.com/questions/33004650/should-we-use-git-or-tfvc-on-a-tfs-2015)
+- [stackoverflow: What are the big differences between TFS and Git for source control when using Visual Studio 2013?](http://stackoverflow.com/questions/20107701/what-are-the-big-differences-between-tfs-and-git-for-source-control-when-using-v)
 
 ### Dicas
 
@@ -163,25 +160,21 @@ git checkout -b NOVA-BRANCH
 - [Git Workflows and Tutorials](https://atlassian.com/git/tutorials/comparing-workflows/centralized-workflow)
 - [Git Branching Workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 
-### Ferramentas úteis
-
-- [GitHub](https://github.com/commitizen/cz-cli)
-
 ### Podcasts
 
 - [Podcast 3 – Git](https://blog.lambda3.com.br/2016/06/podcast-3-git)
 - [Presente e Futuro do .NET – Hipsters #26](http://hipsters.tech/passado-e-futuro-do-net-hipsters-26)
-
-### Extra
-
 - [Git and Bots](http://msdevshow.com/2016/11/git-and-bots-with-sarah-sexton)
-- [Linus on the BK withdrawal [LWN.net]](https://lwn.net/Articles/130681)
+- [Fresh Air for Developers](http://hanselminutes.com/359/git-support-within-visual-studio)
 
 ### História do Git
 
 - [Git (en)](https://en.wikipedia.org/wiki/Git)
 - [Git (pt)](https://pt.wikipedia.org/wiki/Git)
-- [BitKeeper – Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/BitKeeper)
+- [BitKeeper - Wikipédia](https://pt.wikipedia.org/wiki/BitKeeper)
+- [Linus on the BK withdrawal [LWN.net]](https://lwn.net/Articles/130681)
+- [primeiro README do git](https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README)
+- [An Interview with Git Creator Linus Torvalds](https://linux.com/blog/10-years-git-interview-git-creator-linus-torvalds)
 
 ### Vídeos
 
@@ -192,8 +185,6 @@ git checkout -b NOVA-BRANCH
 
 - [Github: 8 things you didn’t know it could do](https://medium.com/@RecastAI/github-8-things-you-didn-t-know-it-could-do-af721f17737c)
 - [Ten Things You Didn’t Know Git And GitHub Could Do](https://owenou.com/ten-things-you-didnt-know-git-and-github-could-do)
-- [An Interview with Git Creator Linus Torvalds](https://linux.com/blog/10-years-git-interview-git-creator-linus-torvalds)
-- [primeiro README do git](https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README)
 
 ### Socorro, perdi meus arquivos?
 
@@ -209,3 +200,7 @@ git checkout -b NOVA-BRANCH
 
 - [Awesome git addons](https://github.com/stevemao/awesome-git-addons)
 - [Awesome browser extensions for GitHub](https://github.com/stefanbuck/awesome-browser-extensions-for-github)
+
+### Extra
+
+- [commitizen](https://github.com/commitizen/cz-cli) - Permite trabalhar com vários projetos em **node.js** de forma sustentável
