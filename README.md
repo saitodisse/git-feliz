@@ -74,7 +74,7 @@ git init
 Se deseja clonar este repositório, por exemplo, vá para sua pasta de projetos e rode um `git clone`:
 
 ```sh
-git clone https://github.com/saitodisse/git-feliz.git
+git clone git@github.com:saitodisse/git-feliz.git
 ```
 
 
@@ -200,6 +200,7 @@ git checkout -b NOVA-BRANCH
 
 - [Awesome git addons](https://github.com/stevemao/awesome-git-addons)
 - [Awesome browser extensions for GitHub](https://github.com/stefanbuck/awesome-browser-extensions-for-github)
+- [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/README.md)
 
 ### Extra
 
