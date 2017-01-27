@@ -74,7 +74,7 @@ git init
 Se deseja clonar este repositório, por exemplo, vá para sua pasta de projetos e rode um `git clone`:
 
 ```sh
-git clone git@github.com:saitodisse/git-feliz.git
+git clone https://github.com/saitodisse/git-feliz.git
 ```
 
 
