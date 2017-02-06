@@ -21,7 +21,6 @@ Ao final existem muitos links. A lista deve crescer bastante.
     - [Novo repositório](#novo-repositório)
     - [Clonar repositório existente](#clonar-repositório-existente)
     - [Baixar últimas modificações do master](#baixar-últimas-modificações-do-master)
-    - [Baixar últimas modificações do master com rebase](#baixar-últimas-modificações-do-master-com-rebase)
     - [Commit](#commit)
     - [Enviar modificações para o servidor remoto](#enviar-modificações-para-o-servidor-remoto)
     - [Criar nova branch a partir de outra](#criar-nova-branch-a-partir-de-outra)
@@ -89,20 +88,6 @@ git pull
 ```
 
 
-### Baixar últimas modificações do master com rebase
-
-Essa é uma forma segura de fazer rebase numa branch local.
-Se a branch remote (origin/xxxxx) estiver sendo compartilhada com outras pessoas **não** é recomendado o rebase.
-
-* Assegure que está na branch master
-* `git pull --rebase` = `git fetch; git rebase origin master`
-
-```sh
-git checkout master
-git pull --rebase
-```
-
-
 ### Commit
 
 Para se fazer um commit antes é necessário adicionar os arquivos com o `git add`. O `git add . -A` adiciona todos os arquivos modificados e novos para o _staging_:
@@ -135,6 +120,9 @@ git push origin OUTRA-BRANCH
 ```sh
 git checkout BRANCH-ORIGEM
 git checkout -b NOVA-BRANCH
+
+# ou simplesmente
+git checkout -b NOVA-BRANCH BRANCH-ORIGEM
 ```
 
 
