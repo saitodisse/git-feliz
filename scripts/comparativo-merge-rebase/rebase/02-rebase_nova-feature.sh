@@ -7,7 +7,7 @@ cd /tmp/new-repo-rebase
 
 
 # ------------
-git checkout -b feat/$1 dev
+git checkout -b feat/$1 master
 
 
 # ------------
@@ -25,7 +25,7 @@ git add .
 
 
 # ------------
-git commit -m"Feat($1): WIP: 1 $1"
+git commit -m"Feat($1): 1 $1"
 
 
 # ------------
@@ -40,7 +40,7 @@ git add .
 
 
 # ------------
-git commit -m"Feat($1): WIP: 2 $1"
+git commit -m"Feat($1): 2 $1"
 
 
 # ------------
@@ -71,11 +71,11 @@ git commit -m"Feat($1): 3 $1 finalizada"
 
 
 # ------------
-git checkout dev
+git checkout master
 
 
 # ------------
-git merge feat/$1 --no-ff -m"MERGE: feat/$1 -> dev"
+git merge feat/$1 --no-ff -m"MERGE: feat/$1 -> master"
 
 
 # ------------
@@ -88,7 +88,7 @@ git branch --all
 
 
 # ------------
-git log dev --graph --oneline
+git log master --graph --oneline
 
 
 # ------------
