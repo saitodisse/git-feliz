@@ -12,7 +12,40 @@ git checkout -b feat/$1 master
 
 # ------------
 echo 'linha 1' > $1.txt
+
+
+# ------------
+git status
+
+
+# ------------
+git add .
+
+
+# ------------
+git commit -m"Feat($1): $1 seq(1)"
+
+
+# ------------
 echo 'linha 2' >> $1.txt
+
+# ------------
+git status
+
+
+# ------------
+git add .
+
+
+# ------------
+git commit -m"Feat($1): $1 seq(2)"
+
+
+# ------------
+git log --graph --oneline
+
+
+# ------------
 echo 'linha 3' >> $1.txt
 
 
@@ -25,49 +58,16 @@ git add .
 
 
 # ------------
-git commit -m"Feat($1): 1 $1"
+git commit -m"Feat($1): $1 seq(3)"
 
 
 # ------------
-echo 'linha 4' >> $1.txt
-
-# ------------
-git status
+# squash all (http://stackoverflow.com/a/5201642/66428)
+git reset --soft HEAD~3 &&
 
 
 # ------------
-git add .
-
-
-# ------------
-git commit -m"Feat($1): 2 $1"
-
-
-# ------------
-git log --graph --oneline
-
-
-# ------------
-# 4) Finaliza Feature
-
-# ------------
-git checkout feat/$1
-
-
-# ------------
-echo 'linha 5 - FIM' >> $1.txt
-
-
-# ------------
-git status
-
-
-# ------------
-git add .
-
-
-# ------------
-git commit -m"Feat($1): 3 $1 finalizada"
+git commit -m"$(git log --format=%B --reverse HEAD..HEAD@{1})"
 
 
 # ------------
@@ -75,7 +75,7 @@ git checkout master
 
 
 # ------------
-git merge feat/$1 --no-ff -m"MERGE: feat/$1 -> master"
+git merge feat/$1 -m"MERGE: feat/$1 -> master" --ff-only
 
 
 # ------------
@@ -85,10 +85,6 @@ git branch -d feat/$1
 
 # ------------
 git branch --all
-
-
-# ------------
-git log master --graph --oneline
 
 
 # ------------

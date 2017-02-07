@@ -7,15 +7,15 @@ cd /tmp/new-repo-rebase
 
 
 # ------------
-# 3) Corrige erro em prod
+# 3) Corrige erro em master pra jogar pra prod / certificacao
 
 
 # ------------
-git checkout -b fix/$1 prod
+git checkout -b fix/$1 master
 
 
 # ------------
-echo 'linha 5 - $1' >> arquivo.txt
+echo "linha 5 - $1" >> arquivo.txt
 
 
 # ------------
@@ -27,19 +27,29 @@ git add .
 
 
 # ------------
-git commit -m"Fix:(prod) corrige erro"
+git commit -m"Fix:(Assunto) $1"
 
 
 # ------------
-# faz merge da correção no prod
-git checkout prod
+# merge FF master
+git checkout master
+
+
+# ------------
 git merge fix/$1
 
 
 # ------------
-# faz rebase do prod em DEV
-git checkout master
-git rebase prod
+# merge FF prod
+git checkout prod
+
+
+# ------------
+# essa parte é delicada
+# pode ser uma boa fazer cherry-pick em vez de merge caso não possa ir pra produção
+# com alguma feature nova
+git merge master
+
 
 
 # ------------

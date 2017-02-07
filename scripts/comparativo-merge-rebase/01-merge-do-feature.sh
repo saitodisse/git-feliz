@@ -120,13 +120,13 @@ git commit -m"Fix:(Principal) corrige erro"
 # ------------
 # faz merge da correção MASTER
 git checkout master
-git merge fix/corrige-erro -m"Merge fix/corrige-erro -> master" --no-ff
+git merge fix/corrige-erro -m"Merge fix/corrige-erro -> master"
 
 
 # ------------
 # faz merge da correção DEV
 git checkout dev
-git merge fix/corrige-erro -m"Merge fix/corrige-erro -> dev" --no-ff
+git merge fix/corrige-erro -m"Merge fix/corrige-erro -> dev"
 
 
 # ------------
