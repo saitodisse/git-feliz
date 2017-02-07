@@ -2,12 +2,6 @@
 set -o verbose
 
 
-# ------------
-cd /tmp/new-repo-rebase
-
-
-
-
 # -------------
 ./scripts/comparativo-merge-rebase/rebase/01-rebase_cria-repo.sh
 ./scripts/comparativo-merge-rebase/rebase/03-rebase_corrige-bug.sh bugfix-1
@@ -18,6 +12,8 @@ cd /tmp/new-repo-rebase
 
 
 # -------------
+cd /tmp/new-repo-rebase
+
 
 # ------------
 git branch --all
