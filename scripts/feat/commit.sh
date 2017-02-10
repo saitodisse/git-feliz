@@ -11,7 +11,7 @@ git checkout $1
 
 
 # ------------
-echo "$1 - $2 - some text" >> `echo "$1" | sed -e "s/feat\\///g"`-file.txt
+echo "$1 - $2 - some text" >> `echo "$1" | sed -e "s/\(feat\|bugfix\)\\///g"`-file.txt
 
 
 # ------------
