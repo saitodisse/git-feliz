@@ -7,8 +7,8 @@ cd /tmp/new-repo
 
 
 # ------------
-git checkout $1
+git checkout master
 
 
 # ------------
-git merge master -m"MERGE: with master"
+git branch -D $1

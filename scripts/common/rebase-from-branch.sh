@@ -7,4 +7,8 @@ cd /tmp/new-repo
 
 
 # ------------
-git branch -d $1
+git checkout $1
+
+
+# ------------
+git rebase $2
