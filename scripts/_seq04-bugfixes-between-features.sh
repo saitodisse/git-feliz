@@ -2,6 +2,9 @@
 set -o verbose
 cd ./scripts/
 
+# In this ilusional example all change are made in a sync mode
+# Next examples are more "real"
+
 ./common/new-repo.sh
 ./common/change-user.sh "Bush"
 ./common/first-commit.sh                                              ;sleep 1

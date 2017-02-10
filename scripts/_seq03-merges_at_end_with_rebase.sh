@@ -2,6 +2,8 @@
 set -o verbose
 cd ./scripts/
 
+# with a git rebase all commits stay on the same master line
+
 ./common/new-repo.sh
 ./common/change-user.sh "Bush"
 ./common/first-commit.sh                           ;sleep 1
