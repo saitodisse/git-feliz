@@ -43,6 +43,8 @@ cd ./scripts/
 ./common/change-user.sh "Fixer"
 ./feat/commit.sh               bugfix/fix-1 fix-1-line-3          ;sleep 1
 
+./common/status.sh
+
 if [ $SLEEP == "1" ]; then sleep 1; else read -p "... rebase bugfix/fix-1"; fi;
 ./feat/rebase-from-master.sh   bugfix/fix-1                       ;sleep 1
 ./feat/merge-to-master.sh      bugfix/fix-1                       ;sleep 1
@@ -56,6 +58,8 @@ if [ $SLEEP == "1" ]; then sleep 1; else read -p "... rebase bugfix/fix-1"; fi;
 ./common/change-user.sh "Donald"
 ./feat/commit.sh               feat/feature-2 line-3             ;sleep 1
 
+./common/status.sh
+
 if [ $SLEEP == "1" ]; then sleep 1; else read -p "... rebase feat/feature-2"; fi;
 ./feat/rebase-from-master.sh   feat/feature-2                    ;sleep 1
 ./feat/merge-to-master.sh      feat/feature-2                    ;sleep 1
@@ -63,11 +67,15 @@ if [ $SLEEP == "1" ]; then sleep 1; else read -p "... rebase feat/feature-2"; fi
 ./common/change-user.sh "Fixer"
 ./feat/commit.sh               bugfix/fix-2 fix-2-line-3          ;sleep 1
 
+./common/status.sh
+
 if [ $SLEEP == "1" ]; then sleep 1; else read -p "... rebase bugfix/fix-2"; fi;
 ./feat/rebase-from-master.sh   bugfix/fix-2                       ;sleep 1
 ./feat/merge-to-master.sh      bugfix/fix-2                       ;sleep 1
 
 ./common/change-user.sh "Obama"
+
+./common/status.sh
 
 if [ $SLEEP == "1" ]; then sleep 1; else read -p "... rebase feat/feature-1"; fi;
 ./feat/rebase-from-master.sh   feat/feature-1                    ;sleep 1

@@ -15,27 +15,11 @@ Ao final existem muitos links. A lista deve crescer bastante.
 
 <!-- MarkdownTOC -->
 
-- [Instalação](#instalação)
-- [Configuração básica](#configuração-básica)
-- [Primeiros passos](#primeiros-passos)
-    - [Novo repositório](#novo-repositório)
-    - [Clonar repositório existente](#clonar-repositório-existente)
-    - [Baixar últimas modificações do master](#baixar-últimas-modificações-do-master)
-    - [Commit](#commit)
-    - [Enviar modificações para o servidor remoto](#enviar-modificações-para-o-servidor-remoto)
-    - [Criar nova branch a partir de outra](#criar-nova-branch-a-partir-de-outra)
-- [Links](#links)
-    - [TFVC vs Git](#tfvc-vs-git)
-    - [Dicas](#dicas)
-    - [Branching models](#branching-models)
-    - [Podcasts](#podcasts)
-    - [História do Git](#história-do-git)
-    - [Vídeos](#vídeos)
-    - [Curiosidades](#curiosidades)
-    - [Socorro, perdi meus arquivos?](#socorro-perdi-meus-arquivos)
-    - [Cheat Sheets](#cheat-sheets)
-    - [Addons e Plugins](#addons-e-plugins)
-    - [Extra](#extra)
+ - [Instalação](#instalação)
+ - [Configuração básica](#configuração-básica)
+ - [Primeiros passos](#primeiros-passos)
+ - [Links](#links)
+- [Scripts](#scripts)
 
 <!-- /MarkdownTOC -->
 
@@ -193,3 +177,21 @@ git checkout -b NOVA-BRANCH BRANCH-ORIGEM
 ### Extra
 
 - [commitizen](https://github.com/commitizen/cz-cli) - Permite trabalhar com vários projetos em **node.js** de forma sustentável
+
+-------------
+
+# Scripts
+
+Este repositório contém script para simular diferentes situações que podem ocorrer num repositório git. Para executar os scripts use o terminal no linux/mac ou o **Git Bash** no Windows.
+
+Para uma melhor vizualização em tempo real da árvore de commits recomendo o uso do **gitg**. Testei com o gitk, sourceTree, smartgit e github for windows, mas o **gitg** foi o mais rápido e simples para a tarefa de vizualizar a árvores de commits de forma gráfica.
+
+```sh
+./scripts/_seq10-release-branch-rebase-squash.sh
+
+# abra o repositório pelo gitg
+# Windows:
+/c/Program\ Files/gitg/bin/gitg.exe /c/Users/saito/AppData/Local/Temp/new-repo
+# Linux:
+gitg /tmp/new-repo
+```
