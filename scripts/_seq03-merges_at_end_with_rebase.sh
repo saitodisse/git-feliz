@@ -19,11 +19,11 @@ cd ./scripts/
 ./feat/commit.sh           feat/feature-02 line-3  ;sleep 1
 
 ./common/change-user.sh "Obama"
-./feat/rebase-on-master.sh feat/feature-01         ;sleep 1
+./feat/rebase-from-master.sh feat/feature-01       ;sleep 1
 ./feat/merge-to-master.sh  feat/feature-01         ;sleep 1
 
 ./common/change-user.sh "Donald"
-./feat/rebase-on-master.sh feat/feature-02         ;sleep 1
+./feat/rebase-from-master.sh feat/feature-02       ;sleep 1
 ./feat/merge-to-master.sh  feat/feature-02         ;sleep 1
 
 ./common/status.sh
