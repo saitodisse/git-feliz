@@ -137,6 +137,13 @@ git checkout BRANCH-ORIGEM
 git checkout -b NOVA-BRANCH
 ```
 
+### Adicionar mais alterações no último commit
+
+```sh
+git add arquivo-modificado.txt
+git commit --amend --no-edit
+git push -f origin BRANCH
+```
 
 -----------
 
