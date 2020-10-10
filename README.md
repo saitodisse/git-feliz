@@ -102,6 +102,26 @@ git checkout master
 git pull --rebase
 ```
 
+### Modificar um commit que não é o mais recente na lista
+
+Se deseja modificar um commit mas ele não é o ultimo na lista `git log`, você pode lançar mão do recurso de rebase iterativo.
+
+Supondo que você tenha 3 commits:
+
+* commit 1 - 2454e8d0cd40146938fe3aa3b97b8cee960fcf09
+* commit 2 - e7f060f9fb568f66561cb58fec00387355a40083
+* commit 3 - d8cdc3b162739c855e9368462cb5740ef98d1924
+
+Se deseja modificar o segundo commit, use o seguinte comando:
+
+ ```sh
+ git rebase -i d8cdc3b162739c855e9368462cb5740ef98d1924
+ ```
+
+Será exibido um arquivo listando os commits 1 e 2 para você escolher qual ação deseja fazer com eles. Com isso, basta modificar a palavra ao lado do commit que quer modificar de `pick` para `edit`. Feito isso, salve esse arquivo de commits. 
+
+O git irá aplicar o commit 2 mas não aplicará o commit 1 **ainda**. Então você pode modifica como quiser os arquivos e ao fazer o commit usar a opção `git commmit --amend`. Feito isso, siga com o comando `git rebase --continue`
+
 
 ### Commit
 
